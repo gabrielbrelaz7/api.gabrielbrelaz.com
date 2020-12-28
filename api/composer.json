@@ -17,6 +17,8 @@
         "laravel/tinker": "^2.5",
         "lcobucci/jwt": "^4.0",
         "league/oauth2-server": "^8.2",
+        "reliese/laravel": "^0.0.19",
+        "sinergi/token": "^0.1.0",
         "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
