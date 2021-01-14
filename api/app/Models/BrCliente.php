@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $logotipo
  * @property string|null $descricao
  * 
+ * @property Collection|BrCliente[] $br_clientes
  * @property Collection|BrDevapp[] $br_devapps
  * @property Collection|BrDevweb[] $br_devwebs
  * @property Collection|BrWebdesign[] $br_webdesigns
@@ -35,6 +36,11 @@ class BrCliente extends Model
 		'logotipo',
 		'descricao'
 	];
+
+	public function br_clientes()
+	{
+		return $this->hasMany(BrCliente::class, 'id_cliente');
+	}
 
 	public function br_devapps()
 	{
